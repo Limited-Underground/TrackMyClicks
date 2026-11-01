@@ -1,0 +1,10 @@
+# Release procedure
+
+No public executable release is authorized or claimed by this foundation update. Earlier evaluation ZIPs remain private preserved artifacts.
+
+1. Identify the approved source commit/ref and release scope in the dedicated Project task. Recheck dirty files, outstanding privacy/persistence issues and known performance limitations. Use SemVer; the unchanged functional baseline is 0.3.0 and V0.4 names this foundation assignment, not a claimed 0.4 executable.
+2. Build Debug and Release and run focused regression, migration, expansion, input-buffer and desktop suites. Validate restart, pause, rollover, once-only rewards, migration backups, clean shutdown and a real desktop smoke test. Distinguish automated, native and owner acceptance. Resolve or explicitly obtain owner acceptance of the foreground CPU limitation before calling a build low-resource.
+3. Review all source/history and the exact binary archive for credentials, personal information, databases, local paths, private evidence, debug symbols and unapproved dependencies. Use a fresh clean packaging directory; never upload the prototype workspace or output wholesale. Produce an exact SHA-256 manifest and verify the extracted archive against it.
+4. Retain LICENSE, NOTICE and all exact third-party runtime notices. Generate an SBOM for the actual package and review dependency/vulnerability results. Preserve the previous version and migration backup. Test a fresh extracted x64 package with global .NET discovery disabled and normal close/restart. Do not change the owner's database for validation.
+5. Obtain explicit owner authorization for the named release, version/tag and assets. Do not infer it from an Apache license or public repository. Never bypass branch protection or required checks. Publish only approved assets and sanitized release notes with checksums, launch instructions and material limitations.
+6. Independently read back the tag, commit, release visibility, assets and checksums. Update the owning task and docs/PROJECT_STATUS.md. Retain private logs and adverse findings locally. Mark Done only for the acceptance actually achieved.

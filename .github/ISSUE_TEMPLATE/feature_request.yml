@@ -1,0 +1,16 @@
+name: Feature request
+description: Propose a focused improvement.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: User need and proposed outcome
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria, privacy impact and dependencies
+    validations:
+      required: true

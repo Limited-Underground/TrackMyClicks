@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <Company>Limited Underground</Company>
+    <Authors>Nenad Bjelanovic</Authors>
+    <Copyright>Copyright 2026 Nenad Bjelanovic</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/Limited-Underground/TrackMyClicks</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Product>TrackMyClicks</Product>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+</Project>

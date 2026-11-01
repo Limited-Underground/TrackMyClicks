@@ -1,0 +1,4 @@
+<!-- Copyright 2026 Nenad Bjelanovic; SPDX-License-Identifier: Apache-2.0 -->
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1"><assemblyIdentity version="0.3.0.0" name="TrackMyClicks"/><trustInfo xmlns="urn:schemas-microsoft-com:asm.v3"><security><requestedPrivileges><requestedExecutionLevel level="asInvoker" uiAccess="false"/></requestedPrivileges></security></trustInfo></assembly>
+
+

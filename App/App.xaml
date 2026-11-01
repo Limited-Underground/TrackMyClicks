@@ -1,0 +1,2 @@
+<!-- Copyright 2026 Nenad Bjelanovic; SPDX-License-Identifier: Apache-2.0 -->
+<Application x:Class="TrackMyClicks.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" StartupUri="MainWindow.xaml" ShutdownMode="OnMainWindowClose"/>

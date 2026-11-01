@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net10.0-windows</TargetFramework><UseWPF>true</UseWPF><UseWindowsForms>true</UseWindowsForms><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AppHostDotNetSearch>AppRelative</AppHostDotNetSearch><AppHostRelativeDotNet>.</AppHostRelativeDotNet><Version>0.3.0</Version><Company>Limited Underground</Company><ApplicationManifest>app.manifest</ApplicationManifest></PropertyGroup><ItemGroup><ProjectReference Include="..\Core\TrackMyClicks.Core.csproj" /></ItemGroup><ItemGroup><Content Include="..\LICENSE;..\NOTICE;..\THIRD-PARTY-NOTICES.md" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" /></ItemGroup></Project>
+
+
+

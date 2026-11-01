@@ -1,0 +1,22 @@
+# Generated output and local evidence are never publication inputs.
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+output/
+artifacts/
+evidence/
+tmp/
+*.sqlite*
+*.db
+*.db-*
+*.bak
+*.zip
+*.pfx
+*.p12
+*.pem
+*.key
+.env
+.env.*
+CHATGPT_REVIEW_EXPORT.txt

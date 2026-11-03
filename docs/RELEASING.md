@@ -1,6 +1,10 @@
 # Release procedure
 
-No public executable release is authorized or claimed by this foundation update. Earlier evaluation ZIPs remain private preserved artifacts.
+**November 3, 2026: product development remains frozen.** This is a future procedure, not current execution authority. No source commit/push/PR/merge, binary build/publication or release is authorized by the documentation task. Fresh scoped review and explicit named publication/release authority are required first. Earlier evaluation ZIPs remain private preserved artifacts.
+
+[Current status](PROJECT_STATUS.md) · [Build/testing](BUILD.md) · [Recovery](RECOVERY.md) · [Security](../SECURITY.md) · [Contributing](../CONTRIBUTING.md).
+
+Accepted Core 106 assertions and historical evaluation-package custody do not satisfy the desktop/native, privacy, performance, exact binary or owner-acceptance gates below. V1 readiness gaps remain in current status; this documentation creates no release promise.
 
 1. Identify the approved source commit/ref and release scope in the dedicated Project task. Recheck dirty files, outstanding privacy/persistence issues and known performance limitations. Use SemVer; the unchanged functional baseline is 0.3.0 and V0.4 names this foundation assignment, not a claimed 0.4 executable.
 2. Build Debug and Release and run focused regression, migration, expansion, input-buffer and desktop suites. Validate restart, pause, rollover, once-only rewards, migration backups, clean shutdown and a real desktop smoke test. Distinguish automated, native and owner acceptance. Resolve or explicitly obtain owner acceptance of the foreground CPU limitation before calling a build low-resource.

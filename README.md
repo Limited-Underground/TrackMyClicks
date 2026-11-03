@@ -1,41 +1,39 @@
 # TrackMyClicks
 
-[Apache License 2.0](LICENSE) · [Contributing](CONTRIBUTING.md) · [Build instructions](docs/BUILD.md) · [Current status](docs/PROJECT_STATUS.md)
+**Every Click Counts.** Limited Underground is the project brand and publisher. Copyright 2026 Nenad Bjelanovic. [Apache License 2.0](LICENSE) · [Notices](NOTICE) · [Third-party obligations](THIRD-PARTY-NOTICES.md).
 
-Copyright 2026 Nenad Bjelanovic. Limited Underground is the project brand and publisher.
+**Current state — November 3, 2026:** product development remains frozen indefinitely. This unmerged documentation topic is based on source `60e0a7512033f3ce3af0d52e2545c46c409f8374` (functional baseline 0.3.0). Current authorization covers documentation reconciliation only. Reading these recipes does not authorize a build, tracking launch, profile inspection, release or merge.
 
-The V0.4 assignment establishes the open-source product foundation. Application behavior remains the V0.3 baseline (0.3.0); no new public binary release is claimed.
-Limited Underground · Every Click Counts.
+## Start here
 
-Windows 11 x64 experimental product. No public binary release is established yet. For an existing owner-evaluation package, extract the entire ZIP into a folder, then double-click **TrackMyClicks.exe**. Keep the host/ and shared/ runtime folders alongside it. No installer or separate .NET installation is required. Close another TrackMyClicks version before launching; V0.2 is preserved separately.
+| Need | Maintained route |
+| --- | --- |
+| Current owner, source, accepted evidence and next action | [Current status](docs/PROJECT_STATUS.md), [foundation reading path](docs/FOUNDATION.md) |
+| Purpose, requirements, architecture and remaining quality gates | [Architecture](docs/ARCHITECTURE.md), [quality requirements](docs/ARCHITECTURE.md#10-quality-requirements) |
+| Windows input, data/schema and packaging contracts | [Interfaces](docs/INTERFACES.md) |
+| Build prerequisites and Core versus desktop tests | [Build and testing](docs/BUILD.md) |
+| Declared source and generated-data recovery | [Recovery](docs/RECOVERY.md) |
+| Privacy boundaries and vulnerability reporting | [Security](SECURITY.md) |
+| Contributor/agent rules and future release procedure | [Contributing](CONTRIBUTING.md), [AGENTS](AGENTS.md), [Release](docs/RELEASING.md) |
 
-V0.3 adds current/longest active-day streaks, six dated personal records, a real rolling 60-second click count, 51 tiered badges, three deterministic daily challenges, rotating offline activity facts, and a dedicated achievement showcase. **Show all** opens the showcase; **Back to dashboard** or Escape returns. Bronze, Silver, Gold, Platinum and Diamond thresholds live in Core/ExpansionRules.cs.
+The [dedicated Project 17](https://github.com/orgs/Limited-Underground/projects/17) owns live task status. [Issue6](https://github.com/Limited-Underground/TrackMyClicks/issues/6) tracks this frozen foundation. Local documentation records evidence; it does not replace the Project or grant execution.
 
-Challenges are optional goals for normal computer use. Assignments and targets stay fixed for the local day; each completed assignment grants 25 points exactly once. Earned receipts and points survive restart. Skipping a goal and taking breaks are always fine. Streak milestones are 3, 7, 14, 30, 60 and 100 active local-calendar days. A day requires recorded input; opening the app or staying paused does not make a day active. Yesterday's streak remains current until a real inactive-day gap.
+## Product and source boundaries
 
-The speedometer shows actual observed clicks in the last 60 seconds, without multiplying a partial startup interval. Paused input is excluded and the window continues aging. Restart starts an empty live window while preserving the all-time best and the day's best used by challenges. Personal-record notifications are limited to once per record category per local day. The notification checkbox controls achievement, challenge and record balloons; Windows may suppress their display.
+The Windows 11 x64 experimental baseline counts left/right/middle clicks, keyboard presses, pointer-coordinate distance and wheel activity. It provides daily/lifetime totals, visible pause, a tray menu, SQLite persistence, legacy badge compatibility and 51 tiered achievements, active-day streaks, six personal records, a rolling60-second click count and three deterministic daily challenges. A completed daily challenge grants25 points once; pauses do not create activity. Optional notices use Windows balloons. Distance is estimated using pixels per inch; calibration reinterprets historical raw distance. Wheel activity combines absolute vertical/horizontal deltas, 120 units per notch.
 
-Pause is available on the dashboard and tray menu. Minimize hides the dashboard in the notification area; double-click the tray icon or choose Open dashboard to return. Close (X) or tray Exit saves and stops tracking. Showcase windows close when the app is minimized or exits.
+The baseline opens its dashboard at startup and enables notices for new profiles. Performance, compact-tab navigation and tray-first/default-off-notice corrections from issues2/4/5 remain in a separately preserved private local overlay. They are absent from this candidate's code and unaccepted for integration. Native focus/input/tray behavior, final geometry/DPI and visible CPU acceptance remain open. Social sharing is planned only in issue 3.
 
-Data stays in %LOCALAPPDATA%\Limited Underground\TrackMyClicks\activity.sqlite3. Before upgrading an existing V0.2 database, V0.3 creates a uniquely named coherent SQLite backup beside it: activity.sqlite3.pre-v03-<UTC>-<unique>.bak. Migration is forward-only; newer/unsupported schemas or malformed expansion state are rejected rather than reset. Existing totals, settings and the original nine earned badges are retained. V0.2 did not store unlock dates, so imported badges explicitly show that the original date is unavailable.
+## Evidence and remaining gates
 
-Aggregate data saves every five seconds, on new rewards/record notices, on pause and on normal exit. Rewards, notice latches and qualifying totals commit atomically before notifications are emitted. Abrupt termination can lose up to five seconds of ordinary activity. Data and backups are local and unencrypted. The diagnostic --capture option exports only this app's own interface when explicitly requested; normal tracking does not record screenshots.
+The accepted November 2 same-host Core recovery used fresh HTTPS source and declared installed SDK 10.0.303/targeting pack 10.0.11. Four Release build invocations and 106 actual assertions passed: 15 aggregate, 19 migration, 46 expansion, 26 external generated-data restore. The host inventory was 10.0.14; the executed CLR version was not separately traced. This is not a complete SDK archive, hermetic/new-machine reconstruction, desktop build, owner-data restore or binary-equality result. See [Recovery](docs/RECOVERY.md) for exact scope and private executor availability.
 
-Never stores key identities, typed text, passwords, clipboard contents, app/window names or browsing history. Keyboard identities exist transiently only to suppress held-key repeats and are discarded on release. There are no accounts, telemetry, network calls, cloud services or leaderboards.
+Official Structurizr syntax/JSON/static export passed for the unchanged model. Its [six inspection errors](docs/architecture/README.md#retained-inspection-findings) remain visible; neither handbook presentation nor documentation review establishes architecture acceptance or ISO conformance.
 
-Distance is estimated pointer-coordinate travel, not physical mouse travel. Current pixels-per-inch calibration reinterprets historical raw pointer distance, matching V0.2. Movement personal records use raw pixels for that same interpretation. Completed badges/rewards remain earned; challenge progress retains its observed high-water value. Scroll activity combines absolute vertical and horizontal wheel deltas; 120 units is one notch. Facts use recorded totals, label estimates and refresh at most every 30 seconds.
+Foreground WPF CPU historically reached about 66–73% of one logical core. Low hidden-state samples do not establish visible low-resource operation or prove the screen-hijacking cause. These and the other [V1 readiness gaps](docs/PROJECT_STATUS.md#remaining-v1-readiness-gaps) remain disclosed, not resolved by this documentation.
 
-Normal interactive desktop/session only; secure desktops, other sessions and some protected/elevated apps may not be observable. No special privileges are requested. This is an unsigned owner-evaluation prototype.
+## Privacy and evaluation artifacts
 
-Source builds use .NET 10 SDK:
-- dotnet build App/TrackMyClicks.csproj -c Debug
-- dotnet run --project Tests/TrackMyClicks.Tests.csproj -c Release
-- Focused migration/expansion/integration/buffer/WPF suites are under Tests.Migrations/, Tests.Expansion/, Tests.V03Integration/, Tests.V03Buffer/ and Tests.Visual/.
-- Tests use disposable profiles; close other TrackMyClicks instances first. The WPF harness writes screenshots/results to evidence/v03/ui-tests/.
-- Runtime packaging uses AppHostDotNetSearch=AppRelative and bundled Microsoft runtime folders with their license notices.
+No key identities/content, passwords, clipboard contents, application/window names, browsing history or screenshots during normal tracking are persisted. Key identities exist transiently for repeat suppression. There are no accounts, telemetry, cloud services or application network calls. Aggregates and backups are local, unencrypted and potentially private. The normal profile is under `%LOCALAPPDATA%\Limited Underground\TrackMyClicks\activity.sqlite3`; it is never a foundation fixture. Save ticks are nominally five seconds, with no strict maximum loss bound. See [Interfaces](docs/INTERFACES.md) for migration/completeness limitations.
 
-Publication status, validation limits and the pickup route are in docs/PROJECT_STATUS.md. Private validation evidence, owner-evaluation ZIPs, profiles and recovery records are excluded from this public source set.
-
-Performance qualification: foreground-active WPF CPU on this host was about 66–73% of one logical core; the preserved V0.2 binary also measured about 73%. Background/ordinary hidden-launch samples were 2.3–3.7% of one core and roughly 148–159 MB working set. Root cause of the foreground rendering cost remains unproven; no cache, rendering-mode or OS workaround was shipped. This is a material known limitation for owner evaluation. Tests.Performance records active/background state and optional timer/hook isolation; it is not a claimed CPU-budget pass. Concurrent processes in different Windows sessions sharing one profile are unsupported.
-
-License: original code is licensed under Apache License 2.0. See LICENSE, NOTICE and THIRD-PARTY-NOTICES.md. Preserve applicable third-party notices when distributing runtimes. See docs/RELEASING.md before publishing a binary.
+Earlier V0.1/V0.2/V0.3 unsigned evaluation ZIPs and their evidence remain preserved privately; no supported public binary release is established. They require the complete application/runtime folders and notices. Historical launch/packaging recipes are in [Build](docs/BUILD.md) and [Release](docs/RELEASING.md), with execution boundaries intact. Secure desktops, other sessions and some protected/elevated applications may not be observable; concurrent sessions sharing one profile are unsupported.

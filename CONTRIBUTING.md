@@ -1,5 +1,7 @@
 # Contributing to TrackMyClicks
 
+**Product development remains frozen under the November 2, 2026 owner direction.** The foundation issue records accepted documentation and same-host Core recovery. Keep the public baseline and retained private overlays separate. Check the current handoff and dedicated Project for approved work. Obtain scoped review and applicable authority for publication, merge or release. [Status](docs/PROJECT_STATUS.md) · [Recovery](docs/RECOVERY.md) · [Issue 6](https://github.com/Limited-Underground/TrackMyClicks/issues/6)
+
 Contributions are welcome under Apache License 2.0. Intentionally submitted contributions follow LICENSE; no additional contributor agreement is required. Retain existing copyright and third-party notices. Mark modified files appropriately and describe modifications in the pull request.
 
 Read README.md and docs/PROJECT_STATUS.md first. The [dedicated Project](https://github.com/orgs/Limited-Underground/projects/17) owns task scope, status, priorities and owner decisions. Reuse an existing issue before adding work; record acceptance criteria and dependencies. Set In Progress while actively working and Done only after the task's acceptance criteria pass. A board status is not permission to publish a release.
@@ -8,7 +10,7 @@ Before edits inspect the checkout, branch, dirty work and existing claims. Recor
 
 Use C#/.NET 10 with nullable checking. Keep input callbacks small and memory-only; perform persistence and UI work outside hooks. Preserve local-only aggregate storage, visible pause, migration backups and once-only rewards. Do not add network activity or persist key identities, content, application names or window titles. Discuss new dependencies and their licenses before adoption.
 
-Build and test using docs/BUILD.md. Use synthetic disposable profiles, never an owner's database. Update the existing status entry and affected instructions at handoff with source identity, verified outcomes, limitations, blockers and next action. Keep private logs, paths and databases outside Git. Report security problems using SECURITY.md.
+When separately authorized, build and test using [Build](docs/BUILD.md); Core-only and desktop/hook suites have different prerequisites. Use synthetic disposable profiles, never an owner's database. Update the existing status entry and affected instructions at handoff with source identity, verified outcomes, limitations, blockers and next action. Keep private logs, paths and databases outside Git. Report security problems using SECURITY.md.
 
 Publication must use a reviewed explicit file set and inspect committed history as well as the current tree. Never add a whole prototype folder blindly. No force pushes, unrelated publication or bypass of required checks. Release procedure is docs/RELEASING.md.
 

@@ -1,33 +1,46 @@
 # TrackMyClicks current handoff
 
-Updated November 1, 2026. Read this with README.md and CONTRIBUTING.md; no private chat or model memory is needed.
+Updated November 5, 2026. [Reading route](FOUNDATION.md) · [Architecture](ARCHITECTURE.md) · [Interfaces](INTERFACES.md) · [Testing](BUILD.md) · [Security](../SECURITY.md) · [Recovery](RECOVERY.md) · [Release](RELEASING.md).
 
-## Authority and current task
+## Authority, owner and source
 
-Product: TrackMyClicks. Publisher/brand: Limited Underground. Original-code copyright: 2026 Nenad Bjelanovic, confirmed directly by the owner. Apache License 2.0 and public visibility are approved. No corporate registration or trademark claim is made.
+**Product development remains frozen under the November 2, 2026 owner direction.** On November 4, the bounded foundation task closed as completed and Project 17 recorded it as Done. Its acceptance covers the documented source and custody routes, model export, independent reading review and same-host Core recovery with generated data. [Issue 6](https://github.com/Limited-Underground/TrackMyClicks/issues/6) · [Project 17](https://github.com/orgs/Limited-Underground/projects/17)
 
-Repository: https://github.com/Limited-Underground/TrackMyClicks
+The TrackMyClicks maintainer owns product documentation and local evidence. The Limited Underground Foundation coordinator owns shared integration and handbook selection. Adoption of the documentation has its own review and authorization.
 
-Dedicated public Project: https://github.com/orgs/Limited-Underground/projects/17
+The functional baseline is version 0.3.0 at `60e0a7512033f3ce3af0d52e2545c46c409f8374`. The reviewed documentation proposal is recorded at `c145440c60ac52c761926a54f7b21f202f6174e6`. The canonical `fix/nonintrusive-tray` checkout separately retains 15 tracked changes and two new Tests.Background files from issues 2, 4 and 5. Integration of that overlay remains pending. [Documentation proposal](https://github.com/Limited-Underground/TrackMyClicks/pull/7)
 
-Owning task: [TMC-0001: V0.4 open-source product foundation](https://github.com/Limited-Underground/TrackMyClicks/issues/1). This issue and its Project membership own live status. Primary agent owns the bounded licensing, documentation and publication-hygiene edit scope. No overlapping source claims or feature work are active.
+Personal copyright is2026 Nenad Bjelanovic; Limited Underground is brand/publisher, not an invented registered company. Public visibility and Apache 2.0 were owner-approved. No visibility/license/ownership change follows from documentation maintenance.
 
-## Implemented foundation
+## Accepted evidence and limits
 
-Official Apache LICENSE copied without alteration; owner-confirmed NOTICE and source SPDX attribution; shared package metadata; contributor/security/build/release instructions; issue/PR templates and source-only ignore rules. Private vulnerability reporting was enabled and read back before advertising that route.
+- **Custody:** November 2 declared-source/raw-Git/all-ref checkpoint, original V0.1/V0.2/V0.3 ZIP hashes and selected receipts verified at their recorded scope. Profiles, caches and other ignored historical trees remain excluded at origin. Separate internal-disk custody is not off-laptop protection; no recopy/audit was performed today.
+- The first independent reader closed three wording findings about omitted Version 1 collections, the need for a separate restored-profile executor and the absence of a strict five-second save bound. The November 3 scoped review recorded a qualified pass for the 13-file documentation proposal. [PR 7](https://github.com/Limited-Underground/TrackMyClicks/pull/7)
+- **Core recovery:** the November 2 same-host isolated run was independently accepted by `host-recovery-acceptance-001`: fresh HTTPS 60e0a751 source, 49 input files unchanged, SDK 10.0.303/targeting pack 10.0.11, fresh cleared caches/feeds; four Release builds and 106 actual assertions (15+19+46+26) passed. Generated schema 0 coherent backup -> second empty fixture and closed schema 1 JSON restore/reopen passed. External seed has zero rewards; nonzero 25-point reward/restart duplicate prevention belongs to expansion checks. Host inventory 10.0.14 was recorded, but executed CLR was not separately traced. Not a complete SDK archive, hermetic/new-machine or desktop/native/real-data recovery result.
+- **Model:** unchanged DSL syntax/JSON/static export PASS using official Structurizr2026.09.19/JBR25.0.4. Six exact inspection errors remain [listed](architecture/README.md#retained-inspection-findings). This is not architecture/semantic acceptance or ISO conformance.
+- The November 4 foundation closure cites Handbook 020. Foundation owns each handbook projection and its exact document pins. [Issue 6](https://github.com/Limited-Underground/TrackMyClicks/issues/6)
 
-The implementation remains the V0.3 baseline, version 0.3.0. V0.4 denotes this foundation assignment. No functional logic or database format changes are intended. Source identity for pickup is the repository commit; inspect HEAD, dirty changes and task comments before edits. Do not assume the previous baseline or source hash remains current after later work.
+Exact private manifests/receipts and frozen outputs are retained by the existing foundation task owner, excluded from the public source and handbook input. The external executor is compiled/tested but not supplied in this repository; see [Recovery](RECOVERY.md). These limitations are explicit dependencies, not a public-download claim.
 
-## Validation and limits
+## Historical engineering scope
 
-Prior V0.3 validation recorded 183 functional checks plus Debug/Release builds and extracted portable-ZIP launch. Those are historical engineering results, not a new V0.4 full validation or owner acceptance. This update rechecks changed source/metadata builds, core regression, migration and expansion tests, publication content and preservation. Current results and commit identity are recorded in TMC-0001.
+[TMC-0001](https://github.com/Limited-Underground/TrackMyClicks/issues/1) remains completed at its original source-only open-source foundation scope. [Original handoff](https://github.com/Limited-Underground/TrackMyClicks/blob/60e0a7512033f3ce3af0d52e2545c46c409f8374/docs/PROJECT_STATUS.md) retains that history. V0.4 names the foundation assignment, not a published 0.4 binary.
 
-Known material limitation: foreground-active WPF CPU on the original test host was about 72% of one logical core, similar to preserved V0.2. Background samples were lower. Root cause remains unproven; low-resource acceptance is open. No workaround or performance fix is included here. Pointer travel is an estimate; calibration reinterprets raw historical pixels. Multi-session processes sharing a profile are unsupported; Windows may suppress notification balloons. See README for privacy and persistence limits.
+[TMC-0002](https://github.com/Limited-Underground/TrackMyClicks/issues/2) preserves hidden-only partial performance work; requesting UI Automation client and visible acceptance remain unresolved. [TMC-0004](https://github.com/Limited-Underground/TrackMyClicks/issues/4) preserves compact-tab code; final native geometry/DPI acceptance is open. [TMC-0005](https://github.com/Limited-Underground/TrackMyClicks/issues/5) preserves tray-first/default-off-new-profile notices and exception-safe hook forwarding; actual screen-hijacking cause and native tray/input/focus acceptance remain unproven. [Sharing issue 3](https://github.com/Limited-Underground/TrackMyClicks/issues/3) remains planned. Documentation does not finish these frozen tasks.
 
-## Preservation and next action
+November 1 overlay records retain Debug/Release success and 140 core/migration/expansion/lifecycle/buffer checks plus 43 passive-background checks. Short controlled hidden samples were 1.17% idle,2.73% callback activity,1.04% paused of one logical core,116–121MiB. Historical foreground cost around 72% of one core remains material. These are not new documentation tests or native/visible resource acceptance.
 
-Earlier V0.2/V0.3 packages, their exact manifests, source baselines, migration fixtures and adverse performance evidence remain in private local custody and are excluded from public Git. The owner's profile is not a test fixture and has not been opened or migrated for this assignment. No public executable release has been published.
+## Remaining V1 readiness gaps
 
-Before any new task, verify its Project scope and dependencies, current source/ref and edit ownership. Continue the open foreground-performance investigation only when separately assigned; do not call a functional test pass performance acceptance. Any binary release needs the distinct review and owner authorization in RELEASING.md.
+1. Product behavior remains frozen. Any integration of the private overlays or new code needs explicit owner direction, preserved source identity and scoped review.
+2. P0 incident reproduction/root cause, normal input forwarding/latency, tray/focus/pause/exit and complete dashboard geometry at requested sizes/DPI need actual authorized native acceptance. No synthetic Core result closes them.
+3. A matched visible/hidden/paused CPU qualification and foreground cost explanation remain open. Short hidden readings are insufficient.
+4. Complete semantic validation of supported expansion JSON is unresolved; omitted collections can be admitted as defaults. Preserve/quarantine uncertain state; no repair is authorized.
+5. Full desktop declared-input reconstruction, authentic legacy-binary fixture availability, independently retrievable complete tool closure, accepted-package byte equality and real-profile restoration are not demonstrated by Core recovery. Original package custody is not a supported public release.
+6. Six model inspection findings remain open. Architecture acceptance and ISO conformance require separate evidence.
 
-Continuity closeout must state verified outcome, source identity, limits, blockers, next action and owner. Keep one maintained status entry and one owning task; preserve prior evidence. Housekeeping: no earlier artifacts removed; private source baselines and validation receipts retained; no unrelated workspace edits or recovery cleanup authorized.
+## Next safe action
+
+Use Project 17 to identify the next separately authorized task. Carry forward the native tray, focus, input, geometry, DPI and CPU gates in issues 2, 4 and 5. Foundation owns adoption of the documentation and any new handbook pin. [Project 17](https://github.com/orgs/Limited-Underground/projects/17)
+
+Foundation retains the original source and package custody records, frozen documentation bytes and review evidence.

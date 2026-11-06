@@ -2,7 +2,7 @@
 
 [Status](PROJECT_STATUS.md) · [Requirements](ARCHITECTURE.md#10-quality-requirements) · [Interfaces](INTERFACES.md) · [Recovery](RECOVERY.md) · [Security](../SECURITY.md) · [Release](RELEASING.md).
 
-**Recipes are not execution authority.** Product development remains frozen. The November 3 task performs documentation checks only: no builds, restore replay, tracker, App/hooks or profile access. The accepted November 2 Core result is reused below. This topic contains public baseline 60e0a751, not the private Tests.Background or performance/tab/tray-first overlay.
+**Build and test recipes require separate authorization.** Product development remains frozen. The November 3 reconciliation used offline documentation checks. The accepted November 2 Core result below applies to public baseline `60e0a751`. Tests.Background and the private performance, tab and tray changes are retained outside that baseline. [Current status](PROJECT_STATUS.md)
 
 ## Declared prerequisites
 

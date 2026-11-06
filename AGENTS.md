@@ -1,6 +1,6 @@
 # TrackMyClicks contributor entrypoint
 
-**November 3, 2026: product development remains frozen.** Only the current bounded documentation task may execute; historical builds/recovery grants do not authorize new runs, App/hooks, owner profiles or behavior changes. Keep the documentation candidate and public 60e0a751 source separate from the retained unaccepted overlay. Fresh scoped review and publication authority are still required; no commit/push/PR/merge is granted by this maintenance.
+**Product development remains frozen under the November 2, 2026 owner direction.** Check current task authorization before starting work. Use the named public baseline and preserve the private overlay. Historical recovery grants apply to their original runs. App and hook execution, owner-profile use, behavior changes, publication and release each require applicable authority. [Current status](docs/PROJECT_STATUS.md)
 
 Read [README](README.md), [Contributing](CONTRIBUTING.md), [Foundation](docs/FOUNDATION.md) and [Current status](docs/PROJECT_STATUS.md) before work. These files are the portable human/AI pickup route. The dedicated organization Project owns live task status; its status does not authorize publication or release.
 

@@ -2,11 +2,11 @@
 
 [Status](PROJECT_STATUS.md) · [Build/testing](BUILD.md) · [Interfaces](INTERFACES.md) · [Security](../SECURITY.md) · [Release](RELEASING.md).
 
-**Current state — November 3, 2026:** documentation maintenance only. The November 2 same-host Core-only rehearsal is completed and independently accepted at the narrow scope below. No new recovery run, build, App/hooks, owner-profile access, runtime migration or product development is granted by this page. Historical recipes and receipts are preserved; they do not renew execution authority.
+The November 2 same-host Core rehearsal was independently accepted at the scope below. Use the current handoff to check authority for any future recovery run, build, desktop or hook execution, profile access or runtime migration. [Current status](PROJECT_STATUS.md)
 
 ## Declared source and custody
 
-Public repository: https://github.com/Limited-Underground/TrackMyClicks.git; selected source `60e0a7512033f3ce3af0d52e2545c46c409f8374` (functional 0.3.0). The accepted run obtained fresh HTTPS source and verified49 ordinary inputs unchanged after compilation. It did not recover or integrate the retained uncommitted performance/navigation/tray-first overlay. Current documentation sits unmerged on the existing foundation topic at that same base.
+The accepted run obtained fresh HTTPS source at `60e0a7512033f3ce3af0d52e2545c46c409f8374` for functional baseline 0.3.0. All 49 ordinary inputs matched after compilation. Recovery and integration of the private performance, navigation and tray overlay remain separate. [Public source](https://github.com/Limited-Underground/TrackMyClicks/tree/60e0a7512033f3ce3af0d52e2545c46c409f8374)
 
 The private November 2 checkpoint preserves51 ordinary canonical source files, including15 tracked modifications and two new Tests.Background files, raw Git/all refs, original evaluation ZIPs and selected receipts. Exact custody manifests remain with the existing task owner, excluded from public docs/handbook input. Profiles, build caches and other ignored historical trees were excluded and retained at origin. Independent internal-disk custody is not off-laptop protection. No custody recopy/audit was performed by this documentation maintenance.
 
@@ -45,7 +45,7 @@ Sampled child-process-tree working set peaked at 285,941,760 bytes (about 273 Mi
 
 The retained `host-recovery-acceptance-001` receipt independently checked the frozen recipe/log/output identities:279 declared files,3,838,846 bytes; run manifest SHA-256 `a43d6598b84395bed1f37bcca10d155bfe0742f116f7a46dbda4c8aaebf8d6bc`, Core result SHA-256 `58b888ba778ac5234e48e6ccd838b1f118d746c4052a075963d94aec00f76308`. It found no defects at the stated scope and did not run binaries. Tool/runtime reuse remains installed-host evidence, not an independently archived complete tool capsule or new-machine proof. The private receipt route is maintained by the existing foundation owner; it is not an accessible public dependency in this source repository.
 
-Per coordinator, handbook013 incorporated that accepted recovery-guide version. This reconciled guide is a later documentation delta requiring its own fresh scoped review and explicit handbook pin. No previous receipt, projection or model is rewritten or replayed by this maintenance.
+Handbook 013 incorporated the earlier accepted recovery guide. The November 4 foundation closure cites Handbook 020. Foundation maintains the exact source and file pins for each projection. [Issue 6](https://github.com/Limited-Underground/TrackMyClicks/issues/6)
 
 ## A future authorized reconstruction
 

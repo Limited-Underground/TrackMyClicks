@@ -1,8 +1,8 @@
-# Foundation reading path — November 3, 2026
+# Foundation reading path
 
-**Product development is frozen indefinitely.** Current authorization is a light current-state documentation reconciliation only; earlier accepted isolated recovery remains evidence, not a new run grant. No tracking launch, owner-profile inspection, feature work, release or deployment is authorized by this page.
+**Product development remains frozen under the November 2, 2026 owner direction.** Check the maintainer handoff for current authority before tracking launches, builds, profile work, feature changes or release. [Status](PROJECT_STATUS.md)
 
-This documentation topic is based on public source 60e0a7512033f3ce3af0d52e2545c46c409f8374, version 0.3.0. The canonical working copy also retains uncommitted TMC-0002/4/5 performance, tab-navigation and tray-first changes. Those source changes are preserved privately, are not in this topic, and are not approved for integration. Distinguish baseline from overlay when following any behavioral claim.
+These documents cover functional baseline 0.3.0 at `60e0a7512033f3ce3af0d52e2545c46c409f8374`. The private overlay preserves performance, tab navigation and tray-first changes from TMC-0002, TMC-0004 and TMC-0005. Overlay integration remains pending.
 
 | Reader need | Owning route |
 | --- | --- |
@@ -19,6 +19,6 @@ This documentation topic is based on public source 60e0a7512033f3ce3af0d52e2545c
 
 Intended means a requirement; implemented means source inspection at the named identity; demonstrated means executed evidence with its scope; unresolved means no acceptance claim. Documentation/static model checks cannot establish runtime correctness. ISO/IEC/IEEE 42010:2022 is a review reference only; no conformance is claimed.
 
-Existing source/history, packages and evidence keep their original identities and custody. History is linked from current status rather than rewritten. Handbook selection must be a hash-pinned explicit file allowlist. Never recursively import evidence, profiles, databases, machine records, credentials or packages. This documentation is an unmerged candidate, not a second portfolio/task authority.
+Keep the original identities and custody records for source, history, packages and evidence. History is linked from current status. Foundation selects handbook inputs through explicit file and hash pins. Keep evidence, profiles, databases, machine records, credentials and packages outside that selection.
 
-Current evidence: four Core-only Release builds / 106 assertions independently accepted; not desktop/native/owner-data or new-machine acceptance. Handbook013 incorporated the accepted recovery guide per coordinator; this current documentation delta needs fresh scoped review and a new explicit pin. Six model findings remain listed in the model guide. No shared handbook edits or reruns are part of this task.
+The accepted same-host Core recovery completed four Release builds and 106 assertions. Desktop, native input, real-profile and new-machine acceptance remain open. The model guide lists the six inspection findings. [Status](PROJECT_STATUS.md) · [Model](architecture/README.md)

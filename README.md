@@ -2,7 +2,7 @@
 
 **Every Click Counts.** Limited Underground is the project brand and publisher. Copyright 2026 Nenad Bjelanovic. [Apache License 2.0](LICENSE) · [Notices](NOTICE) · [Third-party obligations](THIRD-PARTY-NOTICES.md).
 
-**Current state — November 3, 2026:** product development remains frozen indefinitely. This unmerged documentation topic is based on source `60e0a7512033f3ce3af0d52e2545c46c409f8374` (functional baseline 0.3.0). Current authorization covers documentation reconciliation only. Reading these recipes does not authorize a build, tracking launch, profile inspection, release or merge.
+**Product development remains frozen under the November 2, 2026 owner direction.** The functional baseline is version 0.3.0 at `60e0a7512033f3ce3af0d52e2545c46c409f8374`. The maintainer handoff records current authorization and acceptance. [Current status](docs/PROJECT_STATUS.md)
 
 ## Start here
 
@@ -22,7 +22,7 @@ The [dedicated Project 17](https://github.com/orgs/Limited-Underground/projects/
 
 The Windows 11 x64 experimental baseline counts left/right/middle clicks, keyboard presses, pointer-coordinate distance and wheel activity. It provides daily/lifetime totals, visible pause, a tray menu, SQLite persistence, legacy badge compatibility and 51 tiered achievements, active-day streaks, six personal records, a rolling60-second click count and three deterministic daily challenges. A completed daily challenge grants25 points once; pauses do not create activity. Optional notices use Windows balloons. Distance is estimated using pixels per inch; calibration reinterprets historical raw distance. Wheel activity combines absolute vertical/horizontal deltas, 120 units per notch.
 
-The baseline opens its dashboard at startup and enables notices for new profiles. Performance, compact-tab navigation and tray-first/default-off-notice corrections from issues2/4/5 remain in a separately preserved private local overlay. They are absent from this candidate's code and unaccepted for integration. Native focus/input/tray behavior, final geometry/DPI and visible CPU acceptance remain open. Social sharing is planned only in issue 3.
+The baseline opens its dashboard at startup and enables notices for new profiles. The separately preserved private overlay contains performance, compact-tab navigation and tray-first changes with notices off by default. Integration and native focus, input, tray, geometry, DPI and visible CPU acceptance remain open. Social sharing is planned in issue 3.
 
 ## Evidence and remaining gates
 
